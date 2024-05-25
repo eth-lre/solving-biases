@@ -1,0 +1,70 @@
+container,"container ( [LABEL] , [NUM] , [ENTITY] , None , None )",[LABEL] has [NUM] [ENTITY]s.
+container,"container ( [LABEL] , [NUM] , [ENTITY] , None , None )",[LABEL] owns [NUM] [ENTITY]s.
+container,"container ( [LABEL] , [NUM] , [ENTITY] , None , None )",There are [NUM] [ENTITY]s in [LABEL]'s collection.
+container,"container ( [LABEL] , [NUM] , [ENTITY] , [ATTRIBUTE] , None )",[LABEL] has [NUM] [ATTRIBUTE] [ENTITY]s.
+container,"container ( [LABEL] , [NUM] , [ENTITY] , None , [UNIT] )","[LABEL] has [NUM] [UNIT]s of [ENTITY]."
+transfer,"transfer ( None , [S_LABEL] , [NUM] , [ENTITY] , None , None )",[S_LABEL] sold [NUM] [ENTITY]s.
+transfer,"transfer ( None , [S_LABEL] , [NUM] , [ENTITY] , None , None )",[S_LABEL] lost [NUM] of [ENTITY]s.
+transfer,"transfer ( None , [S_LABEL] , [NUM] , [ENTITY] , None , [UNIT] )",[S_LABEL] lost [NUM] [UNIT]s of [ENTITY].
+transfer,"transfer ( None , [S_LABEL] , [NUM] , [ENTITY] , [ATTRIBUTE] , None )",[S_LABEL] lost [NUM] [ATTRIBUTE] [ENTITY]s.
+transfer,"transfer ( [R_LABEL] , None , [NUM] , [ENTITY] , None , None )",[R_LABEL] bought [NUM] [ENTITY]s.
+transfer,"transfer ( [R_LABEL] , None , [NUM] , [ENTITY] , None , None )",[R_LABEL] bought [NUM] more [ENTITY]s.
+transfer,"transfer ( [R_LABEL] , None , [NUM] , [ENTITY] , None , [UNIT] )",[R_LABEL] bought [NUM] [UNIT]s more [ENTITY].
+transfer,"transfer ( [R_LABEL] , None , [NUM] , [ENTITY] , [ATTRIBUTE] , None )",[R_LABEL] bought [NUM] [ATTRIBUTE] [ENTITY]s.
+transfer,"transfer ( [R_LABEL] , [S_LABEL] , [NUM] , [ENTITY] , None , None )",Then [R_LABEL] got [NUM] more [ENTITY]s from [S_LABEL].
+transfer,"transfer ( [R_LABEL] , [S_LABEL] , [NUM] , [ENTITY] , None , None )",[S_LABEL] gave [NUM] [ENTITY]s to [R_LABEL].
+transfer,"transfer ( [R_LABEL] , [S_LABEL] , [NUM] , [ENTITY] , None , None )",[S_LABEL] gave [R_LABEL] [NUM] [ENTITY]s.
+transfer,"transfer ( [R_LABEL] , [S_LABEL] , [NUM] , [ENTITY] , None , [UNIT] )",[S_LABEL] gave [R_LABEL] [NUM] [UNIT]s of [ENTITY].
+transfer,"transfer ( [R_LABEL] , [S_LABEL] , [NUM] , [ENTITY] , [ATTRIBUTE] , None )",[S_LABEL] gave [R_LABEL] [NUM] [ATTRIBUTE] [ENTITY]s.
+add,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , None , [A_ENTITY] , None , None )",[R_LABEL] has [NUM] more [R_ENTITY]s than [A_LABEL].
+add,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , None , [A_ENTITY] , None , None )",[A_LABEL] has [NUM] fewer [R_ENTITY]s than [R_LABEL].
+add,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , [R_UNIT] , [A_ENTITY] , None , None )",[R_LABEL] has [NUM] [R_UNIT]s more [R_ENTITY] than [A_LABEL].
+add,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , [R_UNIT] , [A_ENTITY] , None , None )",[A_LABEL] has [NUM] [R_UNIT]s less [A_ENTITY] than [R_LABEL].
+add,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , [R_ATTRIBUTE] , None , [A_ENTITY] , None , None )",[R_LABEL] has [NUM] more [R_ATTRIBUTE] [R_ENTITY]s than [A_LABEL].
+add,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , [R_ATTRIBUTE] , None , [A_ENTITY] , None , None )",[A_LABEL] has [NUM] fewer [R_ATTRIBUTE] [R_ENTITY]s than [R_LABEL].
+add,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , [R_ATTRIBUTE] , None , [A_ENTITY] , [A_ATTRIBUTE] , None )",[R_LABEL] has [NUM] more [R_ATTRIBUTE] [R_ENTITY]s than [A_LABEL].
+add,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , [R_ATTRIBUTE] , None , [A_ENTITY] , [A_ATTRIBUTE] , None )",[A_LABEL] has [NUM] fewer [A_ATTRIBUTE] [A_ENTITY]s than [R_LABEL].
+add,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , [R_UNIT] , [A_ENTITY] , None , [A_UNIT] )",[R_LABEL] has [NUM] [R_UNIT]s of [R_ENTITY] more than [A_LABEL].
+add,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , [R_UNIT] , [A_ENTITY] , None , [A_UNIT] )",[A_LABEL] has [NUM] [A_UNIT]s of [A_ENTITY] more than [R_LABEL].
+times,"times ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , None , [A_ENTITY] , None , None )",[R_LABEL] has [NUM] times as many [R_ENTITY]s as [A_LABEL].
+times,"times ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , [R_UNIT] , [A_ENTITY] , None , [A_UNIT] )",[R_LABEL] has [NUM] times as much [R_ENTITY] in [R_UNIT]s as [A_LABEL] does.
+times,"times ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , [R_ATTRIBUTE] , None , [A_ENTITY] , [A_ATTRIBUTE] , None )", [R_LABEL] has [NUM] times the amount of [R_ATTRIBUTE] [R_ENTITY]s compared to the amount [A_LABEL] has.
+rate,"rate ( [LABEL] , [NUM] , [S_ENTITY] , None , None , [T_ENTITY] , None , None )",Each of [LABEL]'s [T_ENTITY] has [NUM] [S_ENTITY]s.
+rate,"rate ( [LABEL] , [NUM] , [S_ENTITY] , None , None , [T_ENTITY] , None , None )",Every [T_ENTITY] that [LABEL] has contains [NUM] [S_ENTITY]s.
+rate,"rate ( [LABEL] , [NUM] , [S_ENTITY] , None , None , [T_ENTITY] , None , None )",Each of [LABEL]'s [T_ENTITY] holds [NUM] [S_ENTITY]s.
+rate,"rate ( [LABEL] , [NUM] , [S_ENTITY] , None , None , [T_ENTITY] , None , None )",There are [NUM] [S_ENTITY]s in every [LABEL]'s [T_ENTITY].
+rate,"rate ( [LABEL] , [NUM] , [S_ENTITY] , None , [S_UNIT] , [T_ENTITY] , None , [T_UNIT] )",[LABEL] possesses [NUM] [S_UNIT]s of [S_ENTITY] per [T_UNIT] of [T_ENTITY].
+rate,"rate ( [LABEL] , [NUM] , [S_ENTITY] , None , [S_UNIT] , [T_ENTITY] , None , None )",[LABEL] possesses [NUM] [S_UNIT]s of [S_ENTITY] per [T_ENTITY].
+rate,"rate ( [LABEL] , [NUM] , [S_ENTITY] , [S_ATTRIBUTE] , None , [T_ENTITY] , [T_ATTRIBUTE] , None )",[LABEL] possesses [NUM] [S_ATTRIBUTE] [S_ENTITY] for every [T_ATTRIBUTE] [T_ENTITY].
+part,"part ( [W_LABEL] , [P_LABEL] , [W_ENTITY] , None , None , [P_ENTITY] , None , None )",If [W_LABEL] sum up the [W_ENTITY]s that they have,
+part,"part ( [W_LABEL] , [P_LABEL] , [W_ENTITY] , None , [W_UNIT] , [P_ENTITY] , None , [P_UNIT] )",If [W_LABEL] sum up the [W_ENTITY] that they have in [W_UNIT]s,
+part,"part ( [W_LABEL] , [P_LABEL] , [W_ENTITY] , [W_ATTRIBUTE] , None , [P_ENTITY] , [P_ATTRIBUTE] , None )",If [W_LABEL] sum up the [W_ATTRIBUTE] [W_ENTITY]s that they have,
+q-container,"container ( [LABEL] , None , [ENTITY] , None , None )",How many [ENTITY]s does [LABEL] have?
+q-container,"container ( [LABEL] , None , [ENTITY] , None , None )",How many [ENTITY]s does [LABEL] have in their collection?
+q-container,"container ( [LABEL] , None , [ENTITY] , None , None )",How many [ENTITY]s does [LABEL] have in total?
+q-container,"container ( [LABEL] , None , [ENTITY] , None , None )",How many [ENTITY]s does [LABEL] have totaled?
+q-container,"container ( [LABEL] , None , [ENTITY] , None , None )",How many [ENTITY]s does [LABEL] have in all?
+q-container,"container ( [LABEL] , None , [ENTITY] , [ATTRIBUTE] , None )",What is the number of [ATTRIBUTE] [ENTITY]s that [LABEL] has?
+q-container,"container ( [LABEL] , None , [ENTITY] , None , [UNIT] )",How many [UNIT]s of [ENTITY] does [LABEL] have?
+q-add,"add ( [R_LABEL] , [A_LABEL] , None , [R_ENTITY] , None , None , [A_ENTITY] , None , None )",How many [R_ENTITY]s does [R_LABEL] have more than [A_LABEL]?
+q-add,"add ( [R_LABEL] , [A_LABEL] , None , [R_ENTITY] , None , [R_UNIT] , [A_ENTITY] , None , [A_UNIT] )",How many [R_UNIT]s of [R_ENTITY] does [R_LABEL] have more than [A_LABEL]?
+q-add,"add ( [R_LABEL] , [A_LABEL] , None , [R_ENTITY] , [R_ATTRIBUTE] , None , [A_ENTITY] , [A_ATTRIBUTE] , None )",How many [R_ATTRIBUTE] [R_ENTITY]s does [R_LABEL] have more than [A_LABEL]?
+q-rate,"rate ( [LABEL] , None , [S_ENTITY] , None , None , [T_ENTITY] , None , None )",How many [S_ENTITY]s does each of [LABEL]'s' [T_ENTITY] contain?
+q-rate,"rate ( [LABEL] , None , [S_ENTITY] , None , [S_UNIT] , [T_ENTITY] , None , None )",How many [S_UNIT]s of [S_ENTITY] does each of [LABEL]'s' [T_ENTITY] contain?
+q-rate,"rate ( [LABEL] , None , [S_ENTITY] , [S_ATTRIBUTE] , None , [T_ENTITY] , [T_ATTRIBUTE] , None )",How many [S_ATTRIBUTE] [S_ENTITY]s does each of [LABEL]'s' [T_ATTRIBUTE] [T_ENTITY] contain?
+cons-add,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , None , [A_ENTITY] , None , None )",[R_LABEL] has [NUM] more [R_ENTITY]s than [A_LABEL].
+cons-add,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , [R_UNIT] , [A_ENTITY] , None , None )",[R_LABEL] has [NUM] [R_UNIT]s more [R_ENTITY] than [A_LABEL].
+cons-add,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , [R_ATTRIBUTE] , None , [A_ENTITY] , None , None )",[R_LABEL] has [NUM] more [R_ATTRIBUTE] [R_ENTITY]s than [A_LABEL].
+cons-add,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , [R_ATTRIBUTE] , None , [A_ENTITY] , [A_ATTRIBUTE] , None )",[R_LABEL] has [NUM] more [R_ATTRIBUTE] [R_ENTITY]s than [A_LABEL].
+cons-add,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , [R_UNIT] , [A_ENTITY] , None , [A_UNIT] )",[R_LABEL] has [NUM] [R_UNIT]s of [R_ENTITY] more than [A_LABEL].
+cons-sub,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , None , [A_ENTITY] , None , None )",[A_LABEL] has [NUM] fewer [A_ENTITY]s than [R_LABEL].
+cons-sub,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , [R_UNIT] , [A_ENTITY] , None , None )",[A_LABEL] has [NUM] [A_UNIT]s less [A_ENTITY] than [R_LABEL].
+cons-sub,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , [R_ATTRIBUTE] , None , [A_ENTITY] , None , None )",[A_LABEL] has [NUM] fewer [A_ATTRIBUTE] [A_ENTITY]s than [A_LABEL].
+cons-sub,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , [R_ATTRIBUTE] , None , [A_ENTITY] , [A_ATTRIBUTE] , None )",[A_LABEL] has [NUM] fewer [A_ATTRIBUTE] [A_ENTITY]s than [R_LABEL].
+cons-sub,"add ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , [R_UNIT] , [A_ENTITY] , None , [A_UNIT] )",[A_LABEL] has [NUM] [A_UNIT]s of [A_ENTITY] less than [R_LABEL].
+cons-times,"times ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , None , [A_ENTITY] , None , None )",[R_LABEL] has [NUM] times as many [R_ENTITY]s as [A_LABEL].
+cons-times,"times ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , [R_UNIT] , [A_ENTITY] , None , [A_UNIT] )",[R_LABEL] has [NUM] times as much [R_ENTITY] in [R_UNIT]s as [A_LABEL] does.
+cons-times,"times ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , [R_ATTRIBUTE] , None , [A_ENTITY] , [A_ATTRIBUTE] , None )", [R_LABEL] has [NUM] times the amount of [R_ATTRIBUTE] [R_ENTITY]s compared to the amount [A_LABEL] has.
+cons-div,"times ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , None , [A_ENTITY] , None , None )",[A_LABEL] has 1/[NUM] the amount of [A_ENTITY]s as [R_LABEL].
+cons-div,"times ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , None , [R_UNIT] , [A_ENTITY] , None , [A_UNIT] )",[A_LABEL] has 1/[NUM] as much [A_ENTITY] in [A_UNIT]s as [R_LABEL] does.
+cons-div,"times ( [R_LABEL] , [A_LABEL] , [NUM] , [R_ENTITY] , [R_ATTRIBUTE] , None , [A_ENTITY] , [A_ATTRIBUTE] , None )", [A_LABEL] has 1/[NUM] the amount of [A_ATTRIBUTE] [A_ENTITY]s compared to the amount [R_LABEL] has.

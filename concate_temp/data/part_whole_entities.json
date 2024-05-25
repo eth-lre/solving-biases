@@ -1,0 +1,31 @@
+{
+  "toy animals": [
+    "toy dog",
+    "toy cat",
+    "toy horse",
+    "toy elephant",
+    "toy lion"
+  ],
+  "fruits": [
+    "apple",
+    "banana",
+    "orange",
+    "grape",
+    "watermelon"
+  ],
+  "toy vehicles": [
+    "toy car",
+    "toy bicycle",
+    "toy motorcycle",
+    "toy bus",
+    "toy truck"
+  ],
+  "containers": [
+    "suitcase",
+    "box",
+    "bag",
+    "backpack",
+    "basket",
+    "package"
+  ]
+}

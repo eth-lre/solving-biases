@@ -1,0 +1,11 @@
+{
+    "milk":"liter",
+    "gold":"kilogram", 
+    "butter":"gram",
+    "farmland":"acre",
+    "training data":"gigabyte",
+    "rope":"meter",
+    "bitcoin":"dollar",
+    "emergency energy reserve":"kilowatt-hour",
+    "oil":"gallon"
+}

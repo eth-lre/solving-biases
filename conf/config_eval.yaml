@@ -1,0 +1,26 @@
+wandb_mode: disabled
+device: cuda
+dry_run: false
+
+project_dir: null
+model: null
+test_type: consistency
+solution_mode: direct
+seed: 0
+
+output_dir: ./eval_out
+transformers_cache_dir: null
+hf_token_path: null
+
+data_path: data/cons_500.csv
+
+
+defaults:
+  - _self_
+  - override hydra/hydra_logging: disabled
+  - override hydra/job_logging: disabled
+
+hydra:
+  output_subdir: null
+  run:
+    dir: .

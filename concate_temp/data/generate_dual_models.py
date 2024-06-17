@@ -149,4 +149,4 @@ def save_comp_world(n):
         f.write(out_comp)
     
 if __name__ == '__main__':
-    save_comp_world(610)
+    save_linear_world(610)

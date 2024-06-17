@@ -25,20 +25,3 @@ if __name__ == "__main__":
             json.dump(mwp_dict, f)
             f.write('\n')
 
-    # instantiated_world_models = instantiate_logical_form(empty_lf_path, dual_lf_path, destination_path, n_instances)
-    # temp_dict = load_temp_dict(template_file)
-    # templated_mwp_list = generate_mwp(instantiated_world_models, temp_dict, consistency=True)
-    # final_mwp_list = paraphrase_problems(templated_mwp_list, consistency=True)
-
-    # with open(final_text_path, 'w') as f:
-    #     for mwp_dict in final_mwp_list:
-    #         json.dump(mwp_dict, f)
-    #         f.write('\n')
-
-    # for i, mwp in enumerate(final_mwp_list):
-    #     print(f'\n========= PROBLEM {i} ===========\n')
-    #     print(f'---Template-based Body---\n{mwp["body"]}\n')
-    #     print(f'---Template-based Questions---\n{mwp["questions"]}\n')
-    #     for j, text in enumerate(mwp['paraphrased_list']):
-    #         if j == 0: print(f'--- Paraphrased Consistent Problem ---\n{text}\n')
-    #         else: print(f'--- Paraphrased Inconsistent Problem ---\n{text}\n')

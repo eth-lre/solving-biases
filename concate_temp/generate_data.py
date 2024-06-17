@@ -17,21 +17,6 @@ if __name__ == "__main__":
     template_file = 'data/temp_pair_v3.csv'
     n_instances = 1
 
-    # instantiated_comp, instantiated_trans = instantiate_dual_form(empty_lf_path, dual_lf_path, destination_path, dual_destination_path, n_instances)
-    # temp_dict = load_temp_dict(template_file)
-    # templated_mwp_comp = generate_mwp(instantiated_comp, temp_dict, consistency=False, dual=True, pair_cons=False)
-    # templated_mwp_trans = generate_mwp(instantiated_trans, temp_dict, consistency=False, dual=True, pair_cons=False)
-    # final_mwp_comp = paraphrase_problems(templated_mwp_comp, consistency=False)
-    # final_mwp_trans = paraphrase_problems(templated_mwp_trans, consistency=False)
-
-    # with open(final_text_path_comp, 'w') as f:
-    #     for mwp_dict in final_mwp_comp:
-    #         json.dump(mwp_dict, f)
-    #         f.write('\n')
-    # with open(final_text_path_trans, 'w') as f:
-    #     for mwp_dict in final_mwp_trans:
-    #         json.dump(mwp_dict, f)
-    #         f.write('\n')
 
     instantiated_world_models = instantiate_logical_form(empty_lf_path, destination_path, n_instances)
     temp_dict = load_temp_dict(template_file)
@@ -43,10 +28,4 @@ if __name__ == "__main__":
             json.dump(mwp_dict, f)
             f.write('\n')
 
-    # for i, mwp in enumerate(final_mwp_list):
-    #     print(f'\n========= PROBLEM {i} ===========\n')
-    #     print(f'---Template-based Body---\n{mwp["body"]}\n')
-    #     print(f'---Template-based Questions---\n{mwp["questions"]}\n')
-    #     for j, text in enumerate(mwp['paraphrased_list']):
-    #         if j == 0: print(f'--- Paraphrased Consistent Problem ---\n{text}\n')
-    #         else: print(f'--- Paraphrased Inconsistent Problem ---\n{text}\n')
+

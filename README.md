@@ -1,5 +1,5 @@
-# Cognitive Biases in Langauge Models
-This repository contains the code for the paper "Do Language Models Exhibit the Same Cognitive Biases in Problem Solving as Human Learners?" presented at ICML 2024.
+# Cognitive Biases in Language Models
+This repository contains the code for the paper "Do Language Models Exhibit the Same Cognitive Biases in Problem Solving as Human Learners?", presented at ICML 2024.
 
 ## Setup
 To install the required packages, run:
@@ -25,7 +25,20 @@ Run `python eval.py` to load a model, evaluate it, and store its preditions. The
 
 The default configuration can be found in `conf/config_eval.yaml`. The script stores the predictions in `eval_out/[test_type]/[solution_mode]/[model_id]` and uploads the metrics on `wandb`. You can disable wandb sync by setting `wandb_mode=offline`.
 
+## Cite
 
+Please cite as:
+
+```
+@inproceedings{opedal2024language,
+  title = {Do Language Models Exhibit the Same Cognitive Biases in Problem Solving as Human Learners?},
+  author = {Opedal, Andreas and Stolfo, Alessandro and Shirakami, Haruki and Jiao, Ying and Cotterell, Ryan and Schölkopf, Bernhard and Saparov, Abulhair and Sachan, Mrinmaya},
+  booktitle = {Forty-first International Conference on Machine Learning},
+  month = july,
+  year = {2024},
+  url = {https://arxiv.org/abs/2401.18070},
+}
+```
 
 
 

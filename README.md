@@ -25,7 +25,7 @@ Run `python eval.py` to load a model, evaluate it, and store its preditions. The
 
 The default configuration can be found in `conf/config_eval.yaml`. The script stores the predictions in `eval_out/[test_type]/[solution_mode]/[model_id]` and uploads the metrics on `wandb`. You can disable wandb sync by setting `wandb_mode=offline`.
 
-## Cite
+## Citation
 
 Please cite as:
 

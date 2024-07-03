@@ -1,5 +1,5 @@
 # Cognitive Biases in Language Models
-This repository contains the code for the paper "Do Language Models Exhibit the Same Cognitive Biases in Problem Solving as Human Learners?", presented at ICML 2024.
+This repository contains the code for the paper ["Do Language Models Exhibit the Same Cognitive Biases in Problem Solving as Human Learners?"](https://arxiv.org/pdf/2401.18070), presented at ICML 2024.
 
 ## Setup
 To install the required packages, run:
